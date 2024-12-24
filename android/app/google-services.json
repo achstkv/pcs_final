@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062575107608",
+    "project_id": "photospace-54e84",
+    "storage_bucket": "photospace-54e84.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062575107608:android:34f38dc40039e81d339d6d",
+        "android_client_info": {
+          "package_name": "com.example.photospace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjVUL2Yuyy5hXsQh4SDd4gi1yFj_xMtqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
