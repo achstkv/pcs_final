@@ -59,11 +59,11 @@ class _AuthScreenState extends State<AuthScreen> {
       appBar: AppBar(
         title: Text(
           _isLogin ? 'Вход' : 'Регистрация',
-          style: TextStyle(color: Colors.black), // Черный текст заголовка
+          style: TextStyle(color: Colors.black),
         ),
-        backgroundColor: Colors.white, // Белый фон AppBar
-        elevation: 0, // Убираем тень
-        iconTheme: IconThemeData(color: Colors.black), // Черные иконки
+        backgroundColor: Colors.white,
+        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -74,49 +74,45 @@ class _AuthScreenState extends State<AuthScreen> {
               controller: _emailController,
               decoration: InputDecoration(
                 labelText: 'Email',
-                labelStyle: TextStyle(color: Colors.black), // Черный цвет метки
+                labelStyle: TextStyle(color: Colors.black),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                      color: Colors.black), // Черная рамка при фокусе
+                      color: Colors.black),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black), // Черная рамка
+                  borderSide: BorderSide(color: Colors.black),
                 ),
               ),
-              style: TextStyle(color: Colors.black), // Черный текст ввода
-              cursorColor: Colors.black, // Черный курсор
+              style: TextStyle(color: Colors.black),
+              cursorColor: Colors.black,
             ),
-            SizedBox(height: 10), // Уменьшено расстояние между полями
+            SizedBox(height: 10),
             TextField(
               controller: _passwordController,
               decoration: InputDecoration(
                 labelText: 'Пароль',
-                labelStyle: TextStyle(color: Colors.black), // Черный цвет метки
+                labelStyle: TextStyle(color: Colors.black),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                      color: Colors.black), // Черная рамка при фокусе
+                      color: Colors.black),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black), // Черная рамка
+                  borderSide: BorderSide(color: Colors.black),
                 ),
               ),
               obscureText: true,
               style: TextStyle(color: Colors.black),
-              // Черный текст ввода
-              cursorColor: Colors.black, // Черный курсор
+              cursorColor: Colors.black,
             ),
-            SizedBox(height: 20), // Расстояние до кнопки осталось прежним
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: _submit,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                // Черный фон кнопки
                 foregroundColor: Colors.white,
-                // Белый текст
                 elevation: 0,
-                // Убираем тень
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(32), // Большие скругления
+                  borderRadius: BorderRadius.circular(32),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               ),
@@ -132,7 +128,7 @@ class _AuthScreenState extends State<AuthScreen> {
                 _isLogin
                     ? 'Нет аккаунта? Зарегистрируйтесь'
                     : 'Уже есть аккаунт? Войдите',
-                style: TextStyle(color: Colors.black), // Черный текст
+                style: TextStyle(color: Colors.black),
               ),
             ),
           ],
