@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/photo_equipment.dart';
 
 class CartPage extends StatefulWidget {
+
   final List<PhotoEquipment> equipmentList;
 
   const CartPage({super.key, required this.equipmentList});
@@ -48,15 +49,23 @@ class _CartPageState extends State<CartPage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Подтверждение заказа'),
+          backgroundColor: Colors.white,
+          title: Text(
+            'Подтверждение заказа',
+            style: TextStyle(color: Colors.black),
+          ),
           content: Text(
-              'Вы уверены, что вы хотите совершить заказ на сумму \$${getTotalPrice()
-                  .toStringAsFixed(2)}?'),
+            'Вы уверены, что вы хотите совершить заказ на сумму \$${getTotalPrice().toStringAsFixed(2)}?',
+            style: TextStyle(color: Colors.black),
+          ),
           actions: [
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
               },
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.black,
+              ),
               child: Text('Отмена'),
             ),
             TextButton(
@@ -71,6 +80,9 @@ class _CartPageState extends State<CartPage> {
                   SnackBar(content: Text('Заказ успешно совершен!')),
                 );
               },
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.black,
+              ),
               child: Text('Заказать'),
             ),
           ],
